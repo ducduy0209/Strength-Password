@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(77, 89, 251);
+    background: linear-gradient(90deg, rgba(77, 89, 251, 1) 37%, rgba(167, 45, 253, 1) 84%);
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 412px;
+}
+
+header {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wrapper-input {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 16px;
+    outline-color: rgb(140, 55, 197);
+    padding: 0 24px;
+}
+
+.eye-icon-hide,
+.eye-icon-show {
+    position: absolute;
+    cursor: pointer;
+    top: 18px;
+    right: 12px;
+}
+
+.eye-icon-hide {
+    visibility: hidden;
+}
+
+.wrapper-check {
+    width: 100%;
+    margin: 12px 0 8px;
+}
+
+.wrapper-check span {
+    display: inline-block;
+    width: 32%;
+    height: 10px;
+    border-radius: 4px;
+    margin-right: 2px;
+    display: none;
+}
+
+.wrapper-check span:last-child {
+    margin-right: 0;
+}
+
+.text-notify {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    display: none;
+}
+
+.container.weak .wrapper-check span {
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.container.weak .wrapper-check span:first-child {
+    background-color: #ff465a;
+}
+
+.container.weak .text-notify {
+    display: block;
+    color: #ff465a;
+}
+
+.container.weak.medium .wrapper-check span:nth-child(2) {
+    background-color: #fea608;
+}
+
+.container.weak.medium .text-notify {
+    color: #fea608;
+}
+
+.container.weak.medium.strong .wrapper-check span:last-child {
+    background-color: #22ac5a;
+}
+
+.container.weak.medium.strong .text-notify {
+    color: #22ac5a;
+}
